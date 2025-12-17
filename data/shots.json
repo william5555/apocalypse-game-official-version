@@ -1,0 +1,125 @@
+{
+  "shots": [
+    {
+      "id": "SC-001",
+      "chapter": "洪流",
+      "description": "全黑畫面",
+      "duration": 3,
+      "background": "black",
+      "transition": "fade-in",
+      "ambientSound": "wind_long",
+      "ambientVolume": 0.7,
+      "loopAmbient": true,
+      "text": ["全黑畫面。"],
+      "nextShot": "SC-002"
+    },
+    {
+      "id": "SC-002",
+      "chapter": "洪流",
+      "description": "笑臉玩偶特寫",
+      "duration": 0.5,
+      "background": "smiling_doll",
+      "transition": "fade-in",
+      "ambientSound": "child_laugh",
+      "triggerSound": "blunt_hit",
+      "triggerDelay": 0.3,
+      "text": ["特寫：一個半掩在沙中的笑臉玩偶，塑膠表面皸裂。"],
+      "nextShot": "SC-003"
+    },
+    {
+      "id": "SC-003",
+      "chapter": "洪流",
+      "type": "montage",
+      "description": "快速蒙太奇開始",
+      "montageSequence": "洪流_蒙太奇_1"
+    },
+    {
+      "id": "SC-046",
+      "chapter": "洪流",
+      "description": "空蕩鞦韆",
+      "duration": 1.5,
+      "background": "empty_swing",
+      "transition": "fade-in",
+      "camera": "slow-dolly",
+      "ambientSound": "swing_creak",
+      "text": ["中景：一個空蕩的鞦韆在灰黃天空下微微搖晃。"],
+      "nextCard": "SC-101"
+    }
+  ],
+  
+  "sequences": {
+    "洪流_蒙太奇_1": [
+      {
+        "background": "red_beach",
+        "sound": "alarm_fragment",
+        "duration": 0.3
+      },
+      {
+        "background": "crystal_forest",
+        "sound": "heartbeat",
+        "duration": 0.2
+      },
+      {
+        "background": "junkyard",
+        "sound": "radio_fragment",
+        "duration": 0.15
+      },
+      {
+        "background": "rotten_feast",
+        "sound": "glass_break",
+        "duration": 0.1
+      }
+    ],
+    
+    "文明之手_蒙太奇": [
+      {
+        "background": "sunset_city_1",
+        "sound": "rise_electronic_1",
+        "duration": 0.4
+      },
+      {
+        "background": "sunset_city_2",
+        "sound": "rise_electronic_2",
+        "duration": 0.3
+      }
+    ]
+  },
+  
+  "interactive": {
+    "weight_distribution": {
+      "type": "slider",
+      "title": "資源分配決策",
+      "description": "分配以下資源的優先級（總和必須為20）",
+      "sliders": [
+        {
+          "label": "安全",
+          "metric": "caution",
+          "min": 0,
+          "max": 20,
+          "default": 5
+        },
+        {
+          "label": "資源",
+          "metric": "greed",
+          "min": 0,
+          "max": 20,
+          "default": 5
+        },
+        {
+          "label": "民意",
+          "metric": "unity",
+          "min": 0,
+          "max": 20,
+          "default": 5
+        },
+        {
+          "label": "國際",
+          "metric": "xenophobia",
+          "min": 0,
+          "max": 20,
+          "default": 5
+        }
+      ]
+    }
+  }
+}

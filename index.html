@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>末世啟示錄：人性輓歌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/game.css" />
+  <link rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <div id="app-root">
+    <!-- 背景層 -->
+    <div id="bg-layer" data-role="bg"></div>
+
+    <!-- 前景 UI 殼 -->
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="app-title">末世啟示錄：人性輓歌</div>
+        <div class="app-meta">
+          <span class="topbar-chapter" data-role="chapterLabel">序章：靜默的證詞</span>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <section class="scene-card">
+          <div class="scene-card__body" data-role="text">
+            <!-- 劇情文字會由 JS 填進來 -->
+          </div>
+          <div class="scene-card__choices" data-role="choices">
+            <!-- 選項按鈕會由 JS 填進來 -->
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <span class="hint" data-role="hint">載入中...</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/game-content.js"></script>
+  <script src="js/game-effects.js"></script>
+  <script src="js/game-logic.js"></script>
+  <script src="js/save-system.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "title": "末世啟示錄：人性輓歌",
+  "startCardId": "prologue_memory_sequence",
+  "textSpeed": 55,
+  "enableSound": true,
+  "chapters": [
+    { "id": "prologue", "label": "序章：靜默的證詞" },
+    { "id": "chapter1", "label": "第一章：火種與枷鎖" },
+    { "id": "chapter2", "label": "第二章：高牆與裂痕" },
+    { "id": "chapter3", "label": "第三章：虛幻的收割" },
+    { "id": "chapter4", "label": "第四章：絕境的爪牙" },
+    { "id": "final",    "label": "終章：最後的輓歌" }
+  ]
+}
