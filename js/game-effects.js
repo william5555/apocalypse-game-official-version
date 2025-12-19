@@ -99,6 +99,7 @@
       if (!bgElement) return;
 
       const toUrl = GameData.getImage(toImageId) || toImageId;
+      console.log(`[圖片檢查] ID: ${toImageId} | 解析路徑: ${toUrl}`);
       const fromUrl = fromImageId ? GameData.getImage(fromImageId) : null;
 
       if (!toUrl) return;
