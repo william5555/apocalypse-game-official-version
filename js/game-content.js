@@ -31,7 +31,11 @@
     },
     
     async loadJSON(url) {
-      const response = await fetch(url);
+      // 加入時間戳記 (timestamp)，強迫瀏覽器認為這是新檔案
+      // 例如：resources.json?v=1734567890
+      const noCacheUrl = `${url}?v=${new Date().getTime()}`; 
+      
+      const response = await fetch(noCacheUrl);
       if (!response.ok) throw new Error(`無法載入 ${url}`);
       return response.json();
     },
