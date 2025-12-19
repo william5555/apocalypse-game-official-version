@@ -197,7 +197,7 @@
       }
     }
 
-    // 工具：用「小步進」實作淡入/淡出（不需要 WebAudio，維持你原本 Audio 設計）
+    // 工具：用「小步進」實作淡入/淡出（不需要 WebAudio，使用原始 Audio 設計）
     _fadeTo(audio, targetVolume, durationMs = 300, onDone = null) {
       if (!audio) {
         onDone?.();
@@ -224,7 +224,7 @@
       }, 30);
     }
 
-    // 讓 deepseek 的「突然靜音硬切」可直接呼叫
+    // 讓「突然靜音硬切」的情況下可直接呼叫
     hardCutAllAudio() {
       // 立刻停掉 BGM + SFX（不淡出）
       this.stopBgm(true);
